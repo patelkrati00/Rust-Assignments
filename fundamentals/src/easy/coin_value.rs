@@ -16,5 +16,10 @@ pub enum Coin {
 }
 
 pub fn coin_value(coin: Coin) -> u32 {
-    todo!()
+    match coin {
+        Coin::Penny => return 1 as u32,
+        Coin::Nickel => return 5 as u32,
+        Coin::Dime => return 10 as u32,
+        Coin::Quarter => return 25 as u32,
+    }
 }

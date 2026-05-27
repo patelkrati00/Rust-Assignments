@@ -9,5 +9,20 @@
 */
 
 pub fn count_above(values: &Vec<i32>, threshold: i32) -> usize {
-    todo!()
+  // let mut count = 0;
+  //   for i in 0..values.len(){
+  //     let value = values.get(i).unwrap();
+  //     if(*value>threshold){
+  //       count = count + 1;
+  //     }
+  //   }
+  //   return count;
+
+   let mut count = 0;
+    for i in values.iter(){
+      if(*i>threshold){
+        count = count + 1;
+      }
+    }
+    return count;
 }

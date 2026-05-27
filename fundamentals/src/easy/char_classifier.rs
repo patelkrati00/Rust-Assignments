@@ -9,5 +9,38 @@
 */
 
 pub fn classify_char(c: char) -> &'static str {
-    todo!()
+    // let ch = c as u8;
+    // if (ch == 32) {
+    //     return "whitespace";
+    // }
+    // if (ch == 10) {
+    //     return "whitespace";
+    // }
+    // if (ch == 9) {
+    //     return "whitespace";
+    // }
+    // for i in 65..91 {
+    //     if (ch == i) {
+    //         return "alphabetic";
+    //     }
+    // }
+    // for i in 97..123 {
+    //     if (ch == i) {
+    //         return "alphabetic";
+    //     }
+    // }
+    // for i in 48..58 {
+    //     if (ch == i) {
+    //         return "numeric";
+    //     }
+    // }
+    // return "other";
+
+    if c.is_alphabetic() {
+      "alphabetic"
+    }else if c.is_numeric() {
+        "numeric"
+    }else {
+        "other"
+    }
 }

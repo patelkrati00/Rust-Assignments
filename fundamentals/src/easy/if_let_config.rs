@@ -10,5 +10,9 @@
 */
 
 pub fn get_config(value: Option<String>) -> String {
-    todo!()
+    
+    match value {
+        Some(val) => return val,
+        None => return String::from("default"),
+    }
 }
