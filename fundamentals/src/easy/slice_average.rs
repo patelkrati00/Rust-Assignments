@@ -9,5 +9,16 @@
 */
 
 pub fn average(values: &[f64]) -> Option<f64> {
-    todo!()
+   let len = values.len();
+   let mut sum:f64 = 0.0;
+   if(len==0) {
+     return None;
+   }
+
+   for i in 0..len{
+    sum = sum + values[i];
+   }
+
+   let ans = sum/len as f64;
+   return Some(ans) 
 }

@@ -9,5 +9,10 @@
 */
 
 pub fn sum_of_squares(values: &[i32]) -> i32 {
-    todo!()
+    let mut sum = 0;
+    
+    for value in values{
+      sum = sum + value*value;
+    }
+    return sum;
 }

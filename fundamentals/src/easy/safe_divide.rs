@@ -9,5 +9,8 @@
 */
 
 pub fn safe_divide(a: f64, b: f64) -> Option<f64> {
-    todo!()
+    if(b!=0.0) {
+      return Some(a/b);
+    }
+    None
 }

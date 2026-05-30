@@ -9,5 +9,19 @@
 */
 
 pub fn reverse_string(s: &str) -> String {
-    todo!()
+    // let mut vec = Vec::new();
+    let mut rev = String::from("");
+    // for i in s.chars() {
+    //     vec.push(i);
+    // } 
+    // let len = vec.len();
+    // for i in 0..len{
+    //     rev.push(vec[len - 1 - i]);
+    // }
+    // return rev;
+
+    for i in 0..s.chars().count() {
+        rev.push(s.chars().nth(s.chars().count() - 1 - i).unwrap());
+    }
+    return rev;
 }
